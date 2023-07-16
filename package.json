@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "[ -e .env.local ] && set -a && . ./.env.local; next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "[ -e .env.local ] && set -a && . ./.env.local; next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,6 +19,5 @@
     "react-dom": "18.2.0",
     "typescript": "5.1.6",
     "@poozle/react-sdk": "^0.1.12-alpha"
-
   }
 }
