@@ -25,8 +25,8 @@ export default function Home() {
         {open && (
           <PoozleLink
             linkId="bbad23ba-e935-43ff-8c08-c2dd0c9a9bc6"
-            host="http://localhost:3001"
-            redirectURL="http://localhost:3002"
+            host="http://host.docker.internal:3001"
+            redirectURL={process.env.NEXT_PUBLIC_REDIRECT_HOST}
             onClose={() => setopen(false)}
           />
         )}
