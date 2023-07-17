@@ -1,0 +1,14 @@
+{
+    "autorun": true,
+    "autokill": true,
+    "terminals": [
+        {
+            "name": "Run poozle app",
+            "description": "Run Poozle auth example",
+            "focus": true,
+            "execute": false,
+            "recycle": true,
+            "command": "npm run dev"
+        }
+    ]
+}
